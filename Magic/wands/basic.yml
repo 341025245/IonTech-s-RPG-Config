@@ -1,0 +1,94 @@
+basic_bowcaster:
+  name: 'Basic Bowcaster'
+  description: '&b• §8Makeshift Bowcaster'
+  inherit: base_bowcaster
+  icon: bow
+  mana_max: 120
+  mana: 120
+  mana_regeneration: 10
+  cast_min_bowpull: 0.9
+  spells:
+  - manabolt
+  - arrow_regular
+basic_cbowcaster:
+  name: 'Basic Bowcaster'
+  description: '&b• §8Makeshift Bowcaster'
+  inherit: base_bowcaster
+  icon: crossbow
+  mana_max: 120
+  mana: 120
+  mana_regeneration: 10
+  cast_min_bowpull: 1
+  cast_location: 0.2,-0.2,0
+  spells:
+  - manabolt
+  - arrow
+basic_runestone:
+  name: Basic Runestone
+  description: '&b• &8Freshly Hewn'
+  inherit: base_runestone
+  icon: emerald
+  effect_color: "#ffffff"
+  active_spell: manabolt
+  mana_max: 150
+  mana: 150
+  mana_regeneration: 5
+  spells:
+  - manabolt
+basic_scroll:
+  name: '&bBasic Scroll'
+  description: '&b• §8Unstable, One time use'
+  inherit: base_scroll
+  icon: creeper_banner_pattern
+  mana_max: 200
+  mana: 200
+  glow: true
+  effect_color: "#ffffff"
+  lore:
+  - $description
+  - $spells
+  spells:
+  - manabolt
+  - bomb|3
+basic_staff:
+  name: Basic Staff
+  description: '&b• §8Haphazard Staff'
+  inherit: base_staff
+  effect_color: "#ffffff"
+  active_spell: manabolt
+  mana_max: 80
+  mana: 80
+  mana_regeneration: 15
+  spells:
+  - manabolt
+basic_wand:
+  inherit: base_wand
+  name: Basic Wand
+  description: "&b• &8Barebones Wand"
+  effect_color: "#ffffff"
+  active_spell: manabolt
+  icon: stick
+  mana_max: 100
+  mana_regeneration: 10
+  spells:
+  - manabolt
+  - mendwounds
+  - evade
+  - locator
+  - recall
+basic_classwand:
+  inherit: base_wand
+  name: Basic Class Wand
+  class: arcanamage
+  description: "&b• &8Barebones Wand"
+  effect_color: "#ffffff"
+  active_spell: manabolt
+  icon: stick
+  attributes:
+    manamax: 200
+    manaregen: 20
+    cooldownreduction: 100
+  spells:
+  - manabolt
+  - mendwounds
+  - evade

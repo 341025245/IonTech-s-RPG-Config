@@ -1,0 +1,256 @@
+base_helmet:
+  name: Base Helmet
+  icon: leather_helmet
+  worn: true
+  wearable: helmet
+  passive: true
+  indestructible: true
+  enchantable: false
+  craftable: true
+  effect_bubbles: false
+  stack: true
+  unique: true
+  quiet: 2
+  item_attribute_slot: head
+  hide_flags: attributes
+  item_attributes:
+    generic_armor: 0
+    generic_armor_toughness: 0
+    generic_knockback_resistance: 0
+base_chestplate:
+  name: Base Chestplate
+  icon: leather_chestplate
+  worn: true
+  wearable: chestplate
+  passive: true
+  indestructible: true
+  enchantable: false
+  craftable: true
+  effect_bubbles: false
+  stack: true
+  unique: true
+  quiet: 2
+  item_attribute_slot: chest
+  hide_flags: attributes
+  item_attributes:
+    generic_armor: 0
+    generic_armor_toughness: 0
+    generic_knockback_resistance: 0
+base_leggings:
+  name: Base Leggings
+  icon: leather_leggings
+  worn: true
+  wearable: leggings
+  passive: true
+  indestructible: true
+  enchantable: false
+  craftable: true
+  effect_bubbles: false
+  stack: true
+  unique: true
+  quiet: 2
+  item_attribute_slot: legs
+  hide_flags: attributes
+  item_attributes:
+    generic_armor: 0
+    generic_armor_toughness: 0
+    generic_knockback_resistance: 0
+base_boots:
+  name: Base Boots
+  icon: leather_boots
+  worn: true
+  wearable: boots
+  passive: true
+  indestructible: true
+  enchantable: false
+  craftable: true
+  effect_bubbles: false
+  stack: true
+  unique: true
+  quiet: 2
+  item_attribute_slot: feet
+  hide_flags: attributes
+  item_attributes:
+    generic_armor: 0
+    generic_armor_toughness: 0
+    generic_knockback_resistance: 0
+base_bound:
+  inherit: base_keep
+  hidden: true
+  bound: true
+  immortal: true
+  track: true
+  unstashable: true
+base_staff:
+  icon: wooden_shovel
+  inherit: base_bound
+  hidden: true
+  hide_flags: attributes,enchantments
+  cast_location: 0.2,0,0.35
+  quiet: 1
+  locked: false
+  unique: true
+  enchantable: false
+  max_spells: 35
+  left_click: cast
+  item_attributes:
+    GENERIC_ATTACK_SPEED: 10
+  item_attribute_slot: mainhand
+  slots:
+  - gui
+  - controls
+  - spellmode
+  - swappable
+  - Attunement
+  - Overclocker
+  - Overcharger
+  tags:
+    - buffable
+    - transformable
+    - effectable
+    - tweakable
+    - staff
+  slotted:
+  - gui_none
+base_wand:
+  inherit: base_bound
+  hidden: true
+  hide_flags: 31
+  cast_location: 0.5,0,0.35
+  quiet: 1
+  locked: false
+  unique: true
+  indestructible: true
+  enchantable: false
+  craftable: false
+  effect_bubbles: false
+  unstashable: true
+  cancel_interact_on_right_click: true
+  stack: true
+  max_spells: 35
+  xp_display: mana
+  left_click: cast
+  item_attributes:
+    GENERIC_ATTACK_SPEED: 10
+  item_attribute_slot: mainhand
+  cooldown_reduction: "cooldownreduction/100"
+  cost_reduction: "costreduction/100"
+  power: "wandpower/100"
+  slots:
+  - Attunement
+  - Capacitor
+  - Conduit
+  - Engram
+  - gui
+  - controls
+  - spellmode
+  - swappable
+  - castsource
+  tags:
+    - buffable
+    - transformable
+    - effectable
+    - tweakable
+    - wand
+base_runestone:
+  icon: emerald
+  inherit: base_bound
+  hidden: true
+  hide_flags: attributes,enchantments
+  cast_location: 0.2,0,0.35
+  quiet: 1
+  locked: false
+  unique: true
+  enchantable: false
+  max_spells: 35
+  left_click: cast
+  item_attributes:
+    GENERIC_ATTACK_SPEED: 10
+  item_attribute_slot: mainhand
+  slot: main_hand,off_hand
+  slots:
+  - gui
+  - controls
+  - spellmode
+  - swappable
+  - Attunement
+  - Capacitor
+  - Enhancer
+  tags:
+    - buffable
+    - transformable
+    - effectable
+    - tweakable
+    - runestone
+  slotted:
+  - gui_none
+base_scroll:
+  icon: globe_banner_pattern
+  left_click: cast
+  right_click: cycle
+  mode: cast
+  uses: 1
+  unique: false
+  cooldown_reduction: 2
+  cost_reduction: 2
+  cast_location: 0.2,0,0.35
+  glow: true
+  max_spells: 8
+  lore:
+  - ""
+base_bowcaster:
+  icon: bow
+  hidden: true
+  inherit: base_bound
+  mode: inventory
+  left_click: cycle_active_hotbar
+  left_click_sneak: cycle_active_hotbar_reverse
+  drop: toggle
+  right_click: none
+  swap: cycle_hotbar
+  swap_sneak: cycle_hotbar_reverse
+  no_bowpull: none
+  xp_display: true
+  quiet: 1
+  cast_location: 0.5,0,0.35
+  locked: false
+  unique: true
+  enchantable: false
+  effect_bubbles: false
+  hide_flags: attributes
+  item_attributes:
+    - generic_attack_speed: 10
+  item_attribute_slot: hand
+  effect_color: "#ffffff"
+  slots:
+  - Attunement
+  - Bowstring
+  - Overcharger
+  tags:
+    - tweakable
+    - bowcaster
+base_upgrade:
+  icon: written_book
+  upgrade: true
+  indestructible: true
+  placeable: false
+  unique: true
+  craftable: false
+  enchantable: false
+  stack: true
+  force: true
+  glow: true
+base_talisman:
+  name: 'Talisman'
+  icon: creeper_head
+  indestructible: true
+  placeable: false
+  unique: true
+  craftable: false
+  enchantable: false
+  stack: false
+  stackable: false
+  slot: off_hand
+  item_attribute_slot: off_hand
+  tags:
+    - talisman

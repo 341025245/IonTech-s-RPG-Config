@@ -1,0 +1,55 @@
+criticalplayer:
+  icon: spider_eye
+  description: You really shouldn't be seeing this.
+  inherit: false
+  passive: true
+  cast_on_no_target: false
+  triggers:
+    # This triggers when the player deals damage
+    - trigger: damage_dealt
+      damage_types: physical,magic,fire,lightning,ice,explosion
+      min_damage: 0.01
+  actions:
+    cast:
+      - class: Probability
+        actions:
+          - class: Message
+            equation: "damage_dealt * (critdamage/100)"
+            message_type: "action_bar"
+            message: "&cCritical! &f(&7+&4@equation&f)"
+          - class: PlayEffects
+            effects: crit
+          - class: Damage
+  effects:
+    crit:
+      - location: target
+        particle: crit_magic
+        particle_count: 32
+        particle_offset: 0.25
+        particle_data: 0.5
+      - location: both
+      - sound: entity_player_attack_crit
+        sound_pitch: 1.5
+      - sound: entity_player_attack_knockback
+        sound_pitch: 2
+      - location: target
+        material: redstone_block
+        requires_entity_target: true
+        effectlib:
+           class: Equation
+           iterations: 8
+           particles: 5
+           particle: block_crack
+           xEquation: "1.2"
+           yEquation: "-t/75 + 0.2"
+           zEquation: "t/75 + 0.2"
+           updateLocations: true
+           updateDirections: false
+  parameters:
+    no_damage_ticks: 0
+    target: damage_target
+    probability: critchance/100
+    damage_type: critical
+    entity_damage: "damage_dealt * (critdamage/100)"
+    player_damage: "damage_dealt * (critdamage/100)"
+    quiet: true

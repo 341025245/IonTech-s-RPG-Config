@@ -1,0 +1,38 @@
+mage:
+  inherit: base
+  spells:
+    - criticalplayer
+  health_scale: 20
+  mana_max_boost: "manaboost/100"
+  mana_regeneration_boost: "manaregenboost/100"
+  protection:
+    magic: "(magicresistance+arcaneresistance)/100"
+    fire: "(magicresistance+fireresistance)/100"
+    lightning: "(magicresistance+lightningresistance)/100"
+    ice: "(magicresistance+iceresistance)/100"
+    explosion: "(magicresistance+explosiveresistance)/100"
+  strength:
+    magic: "(magicdamage+arcanedamage)/100"
+    fire: "(magicdamage+firedamage)/100"
+    lightning: "(magicdamage+lightningdamage)/100"
+    ice: "(magicdamage+icedamage)/100"
+    explosion: "(magicdamage+explosivedamage)/100"
+  entity_attributes:
+    generic_max_health:
+      value: "vitality/5"
+      operation: add_number
+    generic_armor:
+      value: "defense/5"
+      operation: add_number
+    generic_armor_toughness:
+      value: "defense/50"
+      operation: add_number
+    generic_knockback_resistance:
+      value: "knockbackdefense/100"
+      operation: add_number
+    generic_movement_speed:
+      value: "speed * 0.001"
+      operation: add_number
+    generic_luck:
+      value: "favor"
+      operation: add_number

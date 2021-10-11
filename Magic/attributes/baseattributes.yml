@@ -1,0 +1,159 @@
+vitality:
+  icon: potion:#FF0000
+  default: 0
+  min: -999
+  max: 999
+defense:
+  icon: iron_chestplate
+  default: 0
+  min: -999
+  max: 999
+knockbackdefense:
+  default: 0
+  min: -999
+  max: 999
+jumppower:
+  default: 0
+  min: -999
+  max: 999
+speed:
+  icon: feather
+  default: 0
+  min: -999
+  max: 999
+critchance:
+  icon: iron_sword
+  default: 0
+  min: 0
+  max: 100
+critdamage:
+  icon: iron_axe
+  default: 50
+  min: -999
+  max: 999
+favor:
+  icon: lily_of_the_valley
+  default: 0
+  min: -999
+  max: 100
+#Resistances (Protection)
+magicresistance:
+  icon: chain_chestplate
+  default: 0
+  min: 0
+  max: 999
+arcaneresistance:
+  icon: chain_chestplate
+  default: 0
+  min: 0
+  max: 999
+fireresistance:
+  icon: chain_chestplate
+  default: 0
+  min: 0
+  max: 999
+iceresistance:
+  icon: chain_chestplate
+  default: 0
+  min: 0
+  max: 999
+lightningresistance:
+  icon: chain_chestplate
+  default: 0
+  min: 0
+  max: 999
+explosiveresistance:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+#Damage (Strength)
+magicdamage:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+arcanedamage:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+firedamage:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+icedamage:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+lightningdamage:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+explosivedamage:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+#Wand boosts
+manamax:
+  icon: chain_chestplate
+  default: 0
+  min: -10000
+  max: 10000
+manaregen:
+  icon: chain_chestplate
+  default: 0
+  min: -10000
+  max: 10000
+manaboost:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+manaregenboost:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+cooldownreduction:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+costreduction:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+wandpower:
+  icon: chain_chestplate
+  default: 0
+  min: -999
+  max: 999
+manaleech:
+  icon: chain_chestplate
+  default: 0
+  min: 0
+  max: 999
+lifeleech:
+  icon: chain_chestplate
+  default: 0
+  min: 0
+  max: 999
+#Earn Boosts:
+moneyearnboost:
+  default: 0
+  min: 0
+  max: 999
+spearnboost:
+  default: 0
+  min: 0
+  max: 999
+combatxpearnboost:
+  default: 0
+  min: 0
+  max: 999
